@@ -1,7 +1,7 @@
 /* ============================================================
    Hometown Locksmiths — demo site
    Palette: deep navy + brass gold on ivory (trust / security).
-   Fonts: Playfair Display SC (display) + Cousine (body/mono).
+   Fonts: Marcellus (display serif) + Figtree (body sans).
    Self-contained: no build tools, no frameworks. Runs from file://.
    ============================================================ */
 
@@ -37,11 +37,11 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family:"Cousine",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   color:var(--ink);
   background:var(--pearl);
-  line-height:1.68;
-  font-size:.97rem;
+  line-height:1.62;
+  font-size:1rem;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -50,7 +50,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit}
 
 h1,h2,h3,h4{
-  font-family:"Playfair Display SC","Cousine",system-ui,sans-serif;
+  font-family:"Marcellus",Georgia,"Times New Roman",serif;
   line-height:1.12;
   letter-spacing:0;
   margin:0;
@@ -74,7 +74,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 
 .eyebrow{
   display:inline-flex;align-items:center;gap:.7em;
-  font-family:"Cousine",monospace;
+  font-family:"Figtree",system-ui,sans-serif;
   text-transform:uppercase;
   letter-spacing:.2em;
   font-size:.7rem;
@@ -96,7 +96,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .btn{
   position:relative;overflow:hidden;
   display:inline-flex;align-items:center;justify-content:center;gap:.55em;
-  font-family:"Cousine",monospace;
+  font-family:"Figtree",system-ui,sans-serif;
   font-weight:700;font-size:.88rem;letter-spacing:.03em;text-transform:uppercase;
   padding:1em 1.7em;border-radius:12px;border:2px solid transparent;
   cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),color .22s var(--ease),border-color .22s var(--ease);
@@ -162,19 +162,19 @@ section{padding:clamp(58px,8vw,112px) 0}
 .brand-mark svg{width:25px;height:25px}
 .brand-text{display:flex;flex-direction:column;line-height:1;min-width:0}
 .brand-name{
-  font-family:"Playfair Display SC",sans-serif;font-weight:400;
+  font-family:"Marcellus",serif;font-weight:400;
   font-size:1.02rem;letter-spacing:.01em;color:var(--slate-darker);
 }
 .brand-name b{color:var(--copper);font-weight:400}
 .brand-tag{
   font-size:.54rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-  font-family:"Cousine",monospace;
+  font-family:"Figtree",system-ui,sans-serif;
   color:var(--muted);margin-top:5px;
 }
 
 .main-nav{display:flex;align-items:center;gap:2px}
 .main-nav a{
-  font-family:"Cousine",monospace;text-transform:uppercase;
+  font-family:"Figtree",system-ui,sans-serif;text-transform:uppercase;
   padding:.55em .78em;border-radius:8px;font-weight:600;font-size:.76rem;letter-spacing:.06em;color:var(--ink);
   transition:background .15s ease,color .15s ease;white-space:nowrap;
 }
@@ -183,8 +183,8 @@ section{padding:clamp(58px,8vw,112px) 0}
 .header-phone{
   display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.1;flex:none;
 }
-.header-phone .hp-label{font-family:"Cousine",monospace;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
-.header-phone .hp-num{font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:.98rem;color:var(--slate-darker);white-space:nowrap;margin-top:2px}
+.header-phone .hp-label{font-family:"Figtree",system-ui,sans-serif;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);white-space:nowrap}
+.header-phone .hp-num{font-family:"Marcellus",serif;font-weight:400;font-size:.98rem;color:var(--slate-darker);white-space:nowrap;margin-top:2px}
 .header-phone:hover .hp-num{color:var(--copper)}
 @media(max-width:1180px){.header-phone{display:none}}
 
@@ -238,7 +238,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 }
 .mobile-nav.open .mobile-nav-panel{transform:none}
 .mobile-nav-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-.mobile-nav a.mn-link{font-family:"Cousine",monospace;text-transform:uppercase;letter-spacing:.05em;padding:.85em 1em;border-radius:12px;font-weight:600;font-size:.9rem;color:var(--ink)}
+.mobile-nav a.mn-link{font-family:"Figtree",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:.85em 1em;border-radius:12px;font-weight:600;font-size:.9rem;color:var(--ink)}
 .mobile-nav a.mn-link:hover,.mobile-nav a.mn-link.active{background:var(--slate-tint);color:var(--copper-deep)}
 .mobile-nav .mn-close{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center}
 .mobile-nav .mn-close svg{width:22px;height:22px}
@@ -276,7 +276,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .hero-badge{display:flex;flex-direction:column;gap:4px;position:relative}
 .hero-badge+.hero-badge{padding-left:clamp(18px,3vw,34px)}
 .hero-badge+.hero-badge::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:rgba(255,255,255,.18)}
-.hero-badge .hb-num{font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:1.3rem;color:#fff;line-height:1.05;letter-spacing:0}
+.hero-badge .hb-num{font-family:"Marcellus",serif;font-weight:400;font-size:1.3rem;color:#fff;line-height:1.05;letter-spacing:0}
 .hero-badge .hb-num .stars{color:var(--brass);font-size:.85rem;letter-spacing:.03em}
 .hero-badge .hb-label{font-size:.72rem;color:#b9c2cb;font-weight:400;letter-spacing:.02em;line-height:1.35}
 @media(max-width:440px){
@@ -303,7 +303,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .trust-item:hover{background:var(--pearl-2)}
 .trust-item:last-child{border-right:none}
 .trust-item svg{width:28px;height:28px;color:var(--copper);flex:none}
-.trust-item .ti-top{font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:.82rem;color:var(--slate-darker);line-height:1.15;letter-spacing:.01em}
+.trust-item .ti-top{font-family:"Marcellus",serif;font-weight:400;font-size:.82rem;color:var(--slate-darker);line-height:1.15;letter-spacing:.01em}
 .trust-item .ti-sub{font-size:.72rem;color:var(--muted);margin-top:2px}
 .trust-item .stars{color:var(--brass)}
 @media(max-width:900px){
@@ -348,7 +348,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .svc-card:hover .svc-media img{transform:scale(1.06)}
 .svc-tag{
   position:absolute;left:14px;top:14px;background:var(--brass);color:var(--slate-darker);
-  font-family:"Cousine",monospace;
+  font-family:"Figtree",system-ui,sans-serif;
   font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   padding:.45em .8em;border-radius:999px;box-shadow:0 6px 14px -8px rgba(0,0,0,.4);
 }
@@ -372,13 +372,13 @@ section{padding:clamp(58px,8vw,112px) 0}
   border-radius:18px;padding:16px 20px;box-shadow:0 20px 40px -18px rgba(192,138,52,.85);text-align:center;max-width:200px;
   border:1px solid rgba(255,255,255,.4);
 }
-.owners-badge .ob-num{font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:1.55rem;line-height:1}
+.owners-badge .ob-num{font-family:"Marcellus",serif;font-weight:400;font-size:1.55rem;line-height:1}
 .owners-badge .ob-label{font-size:.66rem;font-weight:400;letter-spacing:.02em;margin-top:4px}
 @media(max-width:520px){.owners-badge{right:12px;bottom:-10px;padding:12px 15px}.owners-badge .ob-num{font-size:1.25rem}}
 .owners-copy h2{margin-bottom:8px}
 .owners-copy p{color:var(--muted);margin-top:16px}
 .owners-sign{margin-top:22px;display:flex;align-items:center;gap:14px}
-.owners-sign .os-names{font-family:"Playfair Display SC",sans-serif;font-weight:400;color:var(--slate-darker);font-size:.9rem}
+.owners-sign .os-names{font-family:"Marcellus",serif;font-weight:400;color:var(--slate-darker);font-size:.9rem}
 .owners-sign .os-role{font-size:.76rem;color:var(--muted);margin-top:3px}
 
 /* ---------- Testimonials ---------- */
@@ -399,7 +399,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .testimonials .review-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.26);background:linear-gradient(160deg,rgba(255,255,255,.13),rgba(255,255,255,.05))}
 .review-card::before{
   content:"\201C";position:absolute;top:8px;right:20px;
-  font-family:"Playfair Display SC",serif;font-size:3.4rem;line-height:1;
+  font-family:"Marcellus",serif;font-size:3.4rem;line-height:1;
   color:var(--brass);opacity:.24;pointer-events:none;
 }
 .review-stars{color:var(--brass);letter-spacing:.08em;font-size:1rem;position:relative}
@@ -407,9 +407,9 @@ section{padding:clamp(58px,8vw,112px) 0}
 .review-who{display:flex;align-items:center;gap:12px;margin-top:2px}
 .review-avatar{
   width:40px;height:40px;border-radius:50%;background:var(--copper);color:#fff;
-  display:grid;place-items:center;font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:.85rem;flex:none;
+  display:grid;place-items:center;font-family:"Marcellus",serif;font-weight:400;font-size:.85rem;flex:none;
 }
-.review-name{font-family:"Playfair Display SC",sans-serif;font-weight:400;color:#fff;font-size:.82rem}
+.review-name{font-family:"Marcellus",serif;font-weight:400;color:#fff;font-size:.82rem}
 .review-meta{font-size:.72rem;color:#9aa4ae;margin-top:3px}
 .reviews-foot{margin-top:34px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;color:#b9c2cb;font-size:.86rem}
 .reviews-foot .stars{color:var(--brass);font-size:1.1rem}
@@ -430,7 +430,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .area-card .ac-ico svg{width:31px;height:31px;color:#fff}
 .area-card h3{color:var(--slate-darker);margin-bottom:6px}
 .area-card p{color:var(--muted);font-size:.9rem}
-.area-card .ac-phone{font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:1.32rem;color:var(--slate-darker);margin-top:14px;display:inline-block}
+.area-card .ac-phone{font-family:"Marcellus",serif;font-weight:400;font-size:1.32rem;color:var(--slate-darker);margin-top:14px;display:inline-block}
 .area-card .ac-phone:hover{color:var(--copper)}
 .area-card .ac-actions{margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
@@ -442,7 +442,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .faq-q{
   width:100%;text-align:left;background:none;border:none;cursor:pointer;
   padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;
-  font-family:"Playfair Display SC",sans-serif;font-weight:400;font-size:.86rem;line-height:1.35;color:var(--slate-darker);
+  font-family:"Marcellus",serif;font-weight:400;font-size:.86rem;line-height:1.35;color:var(--slate-darker);
 }
 .faq-q .faq-ico{width:30px;height:30px;border-radius:8px;background:var(--slate-tint);display:grid;place-items:center;flex:none;transition:background .2s ease,transform .3s ease}
 .faq-q .faq-ico svg{width:18px;height:18px;color:var(--copper);transition:transform .3s ease}
@@ -471,7 +471,7 @@ section{padding:clamp(58px,8vw,112px) 0}
 .footer-brand .brand-name{color:#fff}
 .footer-brand .brand-tag{color:#8b95a0}
 .footer-brand p{margin-top:16px;font-size:.84rem;color:#93a0ab;max-width:38ch}
-.footer-col h4{color:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px;font-family:"Cousine",monospace;font-weight:700}
+.footer-col h4{color:#fff;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px;font-family:"Figtree",system-ui,sans-serif;font-weight:700}
 .footer-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 .footer-col a,.footer-col li{font-size:.86rem;color:#aeb7c0}
 .footer-col a:hover{color:#fff}

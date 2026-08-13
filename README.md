@@ -7,7 +7,7 @@ in Plant City, FL (Hillsborough County). Built as a sales demo by Wilson Innovat
 - **Business:** 4.8★ · 75 Google reviews · owner **John**
 - **Address:** 108 S Evers St, Suite 3, Plant City, FL 33563
 - **Primary CTA:** call or text **(813) 863-6423** (`tel:+18138636423` / `sms:+18138636423`) — no contact forms
-- **Fonts:** Playfair Display SC (display) + Cousine (body/mono), via Google Fonts
+- **Fonts:** Marcellus (display serif) + Figtree (body sans), via Google Fonts
 - **Palette:** deep navy + brass gold on ivory (trust / security)
 - **Tier:** 1 (Clean Slate)
 
